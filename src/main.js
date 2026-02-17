@@ -20,9 +20,10 @@ form.addEventListener("submit", function (event) {
   }
 
   clearGallery();
-  showLoader();
+ 
 
   getImagesByQuery(query)
+   
     .then( (data) => {
       if (data.hits.length === 0) {
         iziToast.error({
